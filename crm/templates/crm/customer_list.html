@@ -72,7 +72,8 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
                         class="btn btn-danger">Delete</a>
                     </td>
                     </td>
-                    <td><a href="" class="btn btn-primary">Summary</a>
+                    <td><a href="{% url 'crm:summary' pk=customer.pk %}"
+                        class="btn btn-primary">Summary</a>
                 </tr>
             {% endfor %}
             </tbody>
